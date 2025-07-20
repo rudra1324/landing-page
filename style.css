@@ -1,0 +1,177 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar */
+.header {
+  background: #0d6efd;
+  padding: 15px 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #ffcc00;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.btn {
+  background: #ffcc00;
+  color: #333;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #ffc107;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://source.unsplash.com/1600x600/?technology,web') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero span {
+  color: #ffcc00;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+  background: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+/* Services Section */
+.services {
+  background: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  color: #0d6efd;
+  margin-bottom: 20px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+  background: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  background: #0d6efd;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
